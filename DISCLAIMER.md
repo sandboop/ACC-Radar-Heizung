@@ -19,10 +19,12 @@ Entwicklungsprojekt. Es ist kein Produkt.**
 - **Nutzung und Nachbau auf eigene Gefahr.** Autoren und Mitwirkende
   übernehmen keine Haftung für Schäden jeder Art, soweit gesetzlich
   zulässig.
-- **Keine Herstellerrolle.** Es werden keine fertigen oder teilweise
-  montierten Platinen oder Bausätze verkauft. Veröffentlicht werden nur
-  Quellcode, Konstruktions- und Fertigungsdaten sowie Dokumentation.
-  Wer Hardware baut oder weitergibt, trägt die Verantwortung dafür
-  selbst (u. a. Produktsicherheit, EMV).
+- **Derzeit keine Herstellerrolle.** Derzeit werden keine Platinen oder
+  Bausätze verkauft oder abgegeben. Veröffentlicht werden nur Quellcode,
+  Konstruktions- und Fertigungsdaten sowie Dokumentation. Sollte sich das
+  ändern, wird es hier angekündigt; wer Hardware abgibt, trägt dann die
+  Herstellerverantwortung (u. a. Produktsicherheit, EMV, Haftung).
+  Wer Hardware selbst baut oder weitergibt, trägt die Verantwortung dafür
+  selbst.
 - Diese Hinweise sind eine Selbstverpflichtung des Projekts und keine
   Rechtsberatung. Bei Zweifeln rechtlichen Rat einholen.

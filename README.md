@@ -106,5 +106,6 @@ Getrennt je Bereich, Details in [`LICENSE.md`](LICENSE.md):
 - Firmware (`firmware/`): GPL-3.0-or-later
 - Dokumentation, Messdaten, CAD und Konfiguration: CC-BY-SA-4.0
 
-Es werden keine fertigen oder teilweise bestückten Platinen oder Bausätze verkauft; veröffentlicht werden nur
-Quellcode, Konstruktions- und Fertigungsdaten und Dokumentation.
+Derzeit werden keine Platinen oder Bausätze verkauft oder abgegeben; veröffentlicht werden nur Quellcode,
+Konstruktions- und Fertigungsdaten und Dokumentation. Sollte sich das ändern, wird es hier angekündigt, und wer
+Hardware abgibt, trägt die Herstellerverantwortung (siehe [`DISCLAIMER.md`](DISCLAIMER.md)).

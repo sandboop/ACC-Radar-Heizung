@@ -224,3 +224,11 @@ lebendes Spec-Dokument.
 - Scan- und CAD-Daten sind sehr groß (einzelne Dateien bis 550 MB, ca. 3,7 GB), die "optimierte" Variante
   immer noch 330 MB. Geplant: reduzierter Ausschnitt (Emblem und Radarbereich) als Release-Anhang, Rohdaten per Link;
   bis dahin Bereitstellung auf Anfrage.
+
+## 2026-11-15 — Aussage zur Herstellerrolle offen formuliert
+
+- Die absolute Aussage "es werden keine Platinen oder Bausätze verkauft" wurde durch "derzeit werden keine
+  Platinen oder Bausätze verkauft oder abgegeben" ersetzt (DISCLAIMER.md, README.md). Sollte sich das ändern,
+  wird es angekündigt, und wer Hardware abgibt, trägt die Herstellerverantwortung. Vor einer Abgabe sind
+  Produktsicherheit, EMV, Haftung und Steuern zu klären (rechtliche Beratung, Versicherung). Eine
+  Interessenabfrage im Forum ist kein Angebot.
