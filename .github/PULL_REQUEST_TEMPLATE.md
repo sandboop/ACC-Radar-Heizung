@@ -19,6 +19,11 @@ Bitte ehrlich angeben, was **nicht** geprüft ist. -->
 - [ ] Dieser PR ändert **keine** Sicherheitslogik (Abschaltungen, Grenzwerte, Leistungsteil, Netzteil-Haltung).
 - [ ] Er ändert sie, und die Begründung und der Prüfplan stehen oben.
 
+## KI-Unterstützung
+
+- [ ] Es wurde **keine** KI genutzt.
+- [ ] Es wurde KI genutzt (Werkzeug und Zweck: ...). Ich habe das Ergebnis gelesen und geprüft, siehe "Wie wurde es geprüft?".
+
 ## Checkliste
 
 - [ ] Build ohne Warnungen (`arduino-cli compile ... --warnings all`)

@@ -212,3 +212,15 @@ lebendes Spec-Dokument.
   Rechtliches), damit nicht überall hin verlinkt werden muss. Die Zusammenfassung stammt aus
   maschinell erzeugten Auszügen und ist gegen den Thread zu prüfen; die Quellen sind Meinungen und
   Erfahrungen, nicht geprüft.
+
+## 2026-11-15 — Hilfegesuche, Scan-Daten und KI-Mitarbeit
+
+- Die Mitarbeit mit KI-Coding-Agenten ist **ausdrücklich erlaubt und erwünscht** (README, CONTRIBUTING, AGENTS.md,
+  Pull-Request-Vorlage mit Feld zur KI-Nutzung). Das Projekt weist transparent aus, dass es mit Unterstützung
+  eines KI-Coding-Agenten aufgearbeitet wurde.
+- Das README führt eine Tabelle "Hilfe gesucht" mit Einstiegen; die Issues wurden mit `help wanted` und
+  `good first issue` gekennzeichnet; neue Issues #31 (Scan- und CAD-Daten bereitstellen) und #32 (Düse und Gehäuse
+  konstruieren), neues Label `mechanik`.
+- Scan- und CAD-Daten sind sehr groß (einzelne Dateien bis 550 MB, ca. 3,7 GB), die "optimierte" Variante
+  immer noch 330 MB. Geplant: reduzierter Ausschnitt (Emblem und Radarbereich) als Release-Anhang, Rohdaten per Link;
+  bis dahin Bereitstellung auf Anfrage.
