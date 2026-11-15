@@ -238,3 +238,15 @@ lebendes Spec-Dokument.
 - `docs/faq.md` beantwortet häufige Fragen zu Zulassung und Recht, Verkauf (derzeit keiner, offen formuliert),
   Stand, Funktion, Fahrzeugen, Nachbau, Sicherheit und Mitmachen. Fragen aus dem Forenthread (Tempomat-Ausfall,
   Sensorheizung, Versiegelung, Tönungsfolie, VCDS) sind als Forenaussagen gekennzeichnet und ungeprüft.
+
+## 2026-11-15 — Scan-Daten veröffentlicht
+
+- Release `scan-daten-v1` auf GitHub mit `Radar-3D-Scan.stl` (84 MB, 1,77 Mio. Dreiecke, aufbereitet zum Konstruieren) und
+  `prototyp-v1-druckdateien.zip`; Beschreibung in `vehicles/golf7-facelift/scan-daten.md`.
+- Einheit und Ausrichtung wurden gegen die Dateien geprüft: `Radar-3D-Scan.stl` ist in Millimetern (251 x 232 x 237 mm,
+  Radarmodul ca. 70 bis 75 mm breit), Fahrtrichtung −Y, oben +Z. Die älteren Teil-Scans und der Gesamtscan liegen dagegen
+  in **Metern** vor (Front 1,5 Einheiten breit); das ist dokumentiert, damit niemand mit falschem Maßstab startet.
+- Die Datei ist nicht repariert (Löcher, nicht auf Wasserdichtheit geprüft); eine reparierte Fassung ist eine Mitmach-Aufgabe.
+- Fahrzeug: Golf 7 R Variant (Facelift), HSN/TSN 0603/BRM (Fahrzeugtyp, nicht individuell), Baujahr 12/2019. Scanner-Einstellungen
+  und Datum sind nicht mehr bekannt.
+- Rechtlicher Hinweis zu Marken (VW-Emblem) im Release und in `scan-daten.md`.
