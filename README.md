@@ -66,11 +66,37 @@ von einbaufertig entfernt.
 
 ## Mitmachen
 
-Gesucht: Hilfe bei CAD (Düse und Gehäuse), Platinenlayout (V4), Firmware-Review (Sicherheitslogik),
-Prüfstand- und Fahrzeugtests, Dokumentation und Messungen an anderen Fahrzeugen. Wie es geht:
-[`CONTRIBUTING.md`](CONTRIBUTING.md). Bitte beachte den [Verhaltenskodex](CODE_OF_CONDUCT.md) und
-[`SECURITY.md`](SECURITY.md) für sicherheitsrelevante Meldungen. Konventionen für Coding-Agenten:
-[`AGENTS.md`](AGENTS.md).
+**Hilfe ist ausdrücklich erwünscht**, auch von Leuten, die gerade erst anfangen. Der Projektinhaber kann schon einiges
+liefern (Scan der Front mit Emblem und Radar, erste Konstruktionsstände, Platinen-Quellen, Messreihen, Doku), braucht
+aber Verstärkung:
+
+| Aufgabe | Was du mitbringen solltest | Einstieg |
+|---|---|---|
+| Düse und Gehäuse konstruieren (CAD, 3D-Druck) | Fusion oder ähnliches CAD; Scan-Daten und bisherige Entwürfe werden bereitgestellt | [#32](https://github.com/sandboop/ACC-Radar-Heizung/issues/32), [#31](https://github.com/sandboop/ACC-Radar-Heizung/issues/31) |
+| Platine V4: Layout, Schutzbeschaltung, kleinere Bauteile | EasyEDA oder KiCad | [#15](https://github.com/sandboop/ACC-Radar-Heizung/issues/15) bis [#19](https://github.com/sandboop/ACC-Radar-Heizung/issues/19) |
+| Firmware-Review, besonders Sicherheitslogik | C/C++ (AVR) | [#2](https://github.com/sandboop/ACC-Radar-Heizung/issues/2) bis [#14](https://github.com/sandboop/ACC-Radar-Heizung/issues/14) |
+| Prüfstandtests | Netzteil, Multimeter, Lust zu messen | [#1](https://github.com/sandboop/ACC-Radar-Heizung/issues/1) |
+| Einbau- und Aufbauanleitung, Fotos | Schreiben, Fotografieren | [#20](https://github.com/sandboop/ACC-Radar-Heizung/issues/20) |
+| Messungen an anderen Fahrzeugen | Fahrzeug, Datenlogger | [#29](https://github.com/sandboop/ACC-Radar-Heizung/issues/29) |
+
+Aufgaben mit dem Label [help wanted](https://github.com/sandboop/ACC-Radar-Heizung/labels/help%20wanted) und [good first issue](https://github.com/sandboop/ACC-Radar-Heizung/labels/good%20first%20issue)
+eignen sich zum Einstieg. Wie es geht: [`CONTRIBUTING.md`](CONTRIBUTING.md). Bitte beachte den
+[Verhaltenskodex](CODE_OF_CONDUCT.md) und [`SECURITY.md`](SECURITY.md) für sicherheitsrelevante Meldungen.
+
+### Mit KI-Coding-Agenten mitmachen: ausdrücklich erlaubt und erwünscht
+
+Du darfst und sollst gern deinen eigenen KI-Coding-Agenten einsetzen (zum Beispiel Claude Code, GitHub Copilot, Cursor
+oder Codex), um das Projekt zu verstehen, Code oder Doku zu schreiben, Schaltungen zu prüfen oder Tests vorzubereiten.
+Das Repo ist darauf vorbereitet: [`AGENTS.md`](AGENTS.md) (tool-neutral), [`CLAUDE.md`](CLAUDE.md) und `.claude/`
+(Agenten für Firmware, Hardware, CAD und Sicherheitsprüfung). Die Spielregeln stehen in
+[`CONTRIBUTING.md`](CONTRIBUTING.md): Du bleibst für deinen Beitrag verantwortlich, kennzeichnest im Pull Request, was
+geprüft ist, und achtest bei Sicherheitslogik besonders auf Sorgfalt.
+
+### Transparenz
+
+Das Projekt wurde mit Unterstützung eines KI-Coding-Agenten (Claude Code) aufgearbeitet und überarbeitet: Doku,
+Sicherheitsanalyse, große Teile der Firmware. Das Ergebnis ist **nicht automatisch richtig**. Deshalb sind Prüfstand
+und Review so wichtig, und deshalb steht der Hinweis "ungetestet" ganz oben.
 
 ## Lizenz
 

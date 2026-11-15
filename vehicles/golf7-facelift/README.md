@@ -12,20 +12,21 @@ Heizelement gearbeitet.
 
 Hintergrund und Erfahrungen aus dem Forum: [`../../docs/hintergrund-forum.md`](../../docs/hintergrund-forum.md).
 
-## Dateien, die nur lokal beim Owner liegen
+## Scan- und CAD-Daten (für alle, die konstruieren wollen)
 
-Aus Größen- und Platzgründen liegen die folgenden Daten **nicht** auf
-dem Git-Repo (siehe `.gitignore`):
+Der Projektinhaber hat einen 3D-Scan der Front und erste Konstruktionsstände. Die Dateien sind **sehr groß** und
+liegen deshalb nicht im Git (siehe `.gitignore`):
 
-- 3D-Scan der Front mit Radar und Emblem (Einstar: Punktwolken, STL,
-  OBJ, 3MF; ca. 3,7 GB)
-- Konstruktion der Düse (Fusion-Projekte, DWG/DXF)
-- 3D-Druckdateien des Prototyps V1 (Gehäuse Heizelement, Platinengehäuse
-  und -deckel, DHT11-Gehäuse, Einlassbefestigung, Verschluss, Haube)
-  samt Druckparametern (Bambu Lab, 06.04.2025)
+- **3D-Scan der Front** mit Emblem und Radarsensor, vorn und hinten (Einstar): STL, OBJ, 3MF und Punktwolken. Zusammen
+  ca. 3,7 GB, einzelne Dateien 40 bis 550 MB. Teilscans: Radar, Emblem (Vorder- und Rückseite), Haubenverschluss.
+- **Düsenkonstruktion** (Fusion-Projekt, Stände v11 und v12, DWG/DXF) und eine einfache Strömungsabschätzung.
+- **3D-Druckdateien des Prototyps V1**: Gehäuse Heizelement, Platinengehäuse und -deckel, DHT11-Gehäuse,
+  Einlass-Befestigung, mit Druckparametern (Bambu Lab).
 
-Geplant: optimierte Varianten später auf GitHub, Rohdaten als
-Download-Link.
+**Bereitstellung:** Reduzierte Varianten (nur Emblem und Radarbereich) kommen als Release-Anhang hier auf GitHub, die
+Rohdaten per Download-Link. Wer daran arbeiten möchte, meldet sich bitte in [Issue #31](https://github.com/sandboop/ACC-Radar-Heizung/issues/31) oder im Forum:
+Dann werden die Dateien als Erstes bereitgestellt. Die zugehörige Aufgabe zum Konstruieren steht in
+[Issue #32](https://github.com/sandboop/ACC-Radar-Heizung/issues/32).
 
 ## Offene Punkte
 

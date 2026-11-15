@@ -3,6 +3,10 @@
 Tool-neutrale Kurzfassung für Coding-Agenten und Mitwirkende (Claude
 Code liest zusätzlich `CLAUDE.md` und `.claude/`).
 
+**Die Mitarbeit mit KI-Coding-Agenten ist in diesem Projekt ausdrücklich erlaubt und
+erwünscht.** Die Spielregeln (Verantwortung, Kennzeichnung im Pull Request,
+besondere Sorgfalt bei Sicherheitslogik) stehen in `CONTRIBUTING.md`.
+
 ## Worum es geht
 Autonome Heizung für das VW-Logo über dem ACC-/Front-Assist-Radar:
 Ein ATtiny826 regelt über DHT11 (Luft), zwei NTC (Heizelement,

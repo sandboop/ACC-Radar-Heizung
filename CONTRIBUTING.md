@@ -54,14 +54,36 @@ Der Build muss **ohne Warnungen** laufen; das prüft auch der automatische Build
 NTC-Tabelle `ntc_table.h` ist eine erzeugte Datei: nicht von Hand ändern, sondern `tools/gen_ntc_table.py`
 anpassen und neu ausführen.
 
-## Eigene KI-Agenten und Werkzeuge
+## KI-Coding-Agenten: ausdrücklich erlaubt und erwünscht
 
-Du darfst mit deinen eigenen Coding-Agenten arbeiten. Regeln für Agenten stehen tool-neutral in
-[`AGENTS.md`](AGENTS.md), für Claude Code zusätzlich in [`CLAUDE.md`](CLAUDE.md) und `.claude/`. Persönliche
-Agenten und Einstellungen gehören **nicht** ins Repo: lokal halten (`~/.claude/agents/` bzw.
-`.claude/agents/local/`, steht in der `.gitignore`). Gemeinsame Projektagenten in `.claude/agents/` werden
-wie Code über Pull Requests geändert. Von KI erzeugte Änderungen gelten wie jede andere: Du bist dafür
-verantwortlich, sie geprüft zu haben, und kennzeichnest im PR, was ungeprüft ist.
+Die Mitarbeit **mit** KI-Coding-Agenten (Claude Code, GitHub Copilot, Cursor, Codex und andere) ist hier **ausdrücklich
+erlaubt und erwünscht**. Das Projekt wurde selbst mit einem Agenten aufgearbeitet. Gerade wer wenig Zeit oder wenig
+Erfahrung mit Firmware, CAD oder Platinen hat, kann mit Agentenhilfe viel beitragen.
+
+**Wie das Repo Agenten unterstützt:**
+- [`AGENTS.md`](AGENTS.md) fasst die Regeln tool-neutral zusammen; [`CLAUDE.md`](CLAUDE.md) und `.claude/` enthalten
+  zusätzlich Agenten für Firmware (`firmware-dev`), Hardware (`hardware-dev`), Mechanik (`cad-dev`) und die
+  Sicherheitsprüfung (`safety-reviewer`) sowie einen Prüfer für Änderungen (`git-maintainer`).
+- Die Doku (`docs/`) ist so geschrieben, dass ein Agent das Soll-Verhalten, die bekannten Schwächen und die
+  Prüfstand-Checkliste lesen kann, bevor er etwas ändert.
+
+**Spielregeln:**
+- **Du bleibst verantwortlich** für das, was du einreichst, auch wenn ein Agent es geschrieben hat. Lies und verstehe es,
+  bevor du es einreichst.
+- **Kennzeichne im Pull Request**, ob und wofür KI genutzt wurde und **was du geprüft hast** (Build, Prüfstand,
+  Review). Ungeprüftes bitte ausdrücklich so benennen.
+- **Sicherheitslogik** (Abschaltungen, Grenzwerte, Leistungsteil, Netzteil-Haltung) nie ungeprüft übernehmen. Ein
+  Agent kann plausibel klingende, aber falsche Werte liefern, besonders bei Bauteildaten und Grenzwerten: Datenblatt
+  und Messung gehen vor.
+- **Nichts erfinden lassen:** Keine Aussagen zu Zulassung, Fahrzeugkompatibilität oder Tests, die nicht belegt sind.
+- **Keine Geheimnisse und keine persönlichen Daten** in Prompts oder Dateien (Zugangsdaten, `arduino_secrets.h`,
+  Klarnamen, Fahrzeugidentifikation).
+- **Persönliche Agenten, Prompts und Einstellungen** gehören nicht ins Repo: lokal halten (`~/.claude/agents/` bzw.
+  `.claude/agents/local/`, steht in der `.gitignore`). Gemeinsame Projektagenten in `.claude/agents/` werden wie Code
+  über Pull Requests geändert.
+- **Lizenz:** Von einem Agenten erzeugte Änderungen stehen unter der Lizenz des jeweiligen Bereichs wie jeder andere
+  Beitrag (siehe [`LICENSE.md`](LICENSE.md)). Prüfe, dass der Agent keinen fremden, anders lizenzierten Code
+  eingefügt hat.
 
 ## Verhalten
 
