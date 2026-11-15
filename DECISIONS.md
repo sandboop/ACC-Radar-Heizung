@@ -232,3 +232,9 @@ lebendes Spec-Dokument.
   wird es angekündigt, und wer Hardware abgibt, trägt die Herstellerverantwortung. Vor einer Abgabe sind
   Produktsicherheit, EMV, Haftung und Steuern zu klären (rechtliche Beratung, Versicherung). Eine
   Interessenabfrage im Forum ist kein Angebot.
+
+## 2026-11-15 — FAQ
+
+- `docs/faq.md` beantwortet häufige Fragen zu Zulassung und Recht, Verkauf (derzeit keiner, offen formuliert),
+  Stand, Funktion, Fahrzeugen, Nachbau, Sicherheit und Mitmachen. Fragen aus dem Forenthread (Tempomat-Ausfall,
+  Sensorheizung, Versiegelung, Tönungsfolie, VCDS) sind als Forenaussagen gekennzeichnet und ungeprüft.
