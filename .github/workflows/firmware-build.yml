@@ -1,0 +1,49 @@
+name: Firmware-Build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: NTC-Tabelle ist aktuell
+        run: |
+          python3 tools/gen_ntc_table.py --out /tmp/ntc_table.h
+          diff /tmp/ntc_table.h firmware/acc_radar_heizung/ntc_table.h
+
+      - uses: arduino/setup-arduino-cli@v2
+        with:
+          version: 1.1.1
+
+      - name: megaTinyCore installieren
+        run: |
+          arduino-cli config init
+          arduino-cli config add board_manager.additional_urls http://drazzy.com/package_drazzy.com_index.json
+          arduino-cli core update-index
+          arduino-cli core install megaTinyCore:megaavr@2.6.11
+
+      - name: Bauen (Standard: eigener DHT11-Treiber, Debug-Ausgang an)
+        run: |
+          arduino-cli compile -b megaTinyCore:megaavr:atxy6:chip=826 --warnings all firmware/acc_radar_heizung
+
+      - name: Bauen ohne Debug-Ausgang
+        run: |
+          mkdir -p /tmp/variante
+          cp -r firmware/acc_radar_heizung /tmp/variante/acc_radar_heizung
+          sed -i 's/#define DEBUG_OUTPUT 1/#define DEBUG_OUTPUT 0/' /tmp/variante/acc_radar_heizung/config.h
+          arduino-cli compile -b megaTinyCore:megaavr:atxy6:chip=826 --warnings all /tmp/variante/acc_radar_heizung
+
+      - name: Bauen mit Watchdog-Test
+        run: |
+          mkdir -p /tmp/variante2
+          cp -r firmware/acc_radar_heizung /tmp/variante2/acc_radar_heizung
+          sed -i 's/#define TEST_HANG_AFTER_MS 0/#define TEST_HANG_AFTER_MS 20000/' /tmp/variante2/acc_radar_heizung/config.h
+          arduino-cli compile -b megaTinyCore:megaavr:atxy6:chip=826 --warnings all /tmp/variante2/acc_radar_heizung
