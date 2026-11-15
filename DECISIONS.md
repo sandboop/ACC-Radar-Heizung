@@ -204,3 +204,11 @@ lebendes Spec-Dokument.
   entfernt, der Archiv-Sketch `v2_variante_beitrag` ohne Namen, `git-maintainer` auf GitHub ausgerichtet.
 - Neu: `CONTRIBUTING.md`, `SECURITY.md`, `CODE_OF_CONDUCT.md`, Issue-Vorlagen, Pull-Request-Vorlage und ein
   automatischer Build (GitHub Actions, noch nicht ausgeführt).
+
+## 2026-11-15 — Hintergrund aus dem Forum zusammengetragen
+
+- `docs/hintergrund-forum.md` fasst den Forenthread "ACC/Front Assist & Schnee(-regen)" (45 Beiträge,
+  2017 und 2024) in eigenen Worten und ohne Nutzernamen zusammen (Problem, Sensorposition, Ideen,
+  Rechtliches), damit nicht überall hin verlinkt werden muss. Die Zusammenfassung stammt aus
+  maschinell erzeugten Auszügen und ist gegen den Thread zu prüfen; die Quellen sind Meinungen und
+  Erfahrungen, nicht geprüft.

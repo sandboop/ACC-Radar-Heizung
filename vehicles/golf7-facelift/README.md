@@ -10,6 +10,8 @@ Ziel der Heizung: das Logo warm bekommen, **ohne metallische Teile vor
 die Radarantenne zu setzen**. Deshalb wird mit einem Luftstrom über ein
 Heizelement gearbeitet.
 
+Hintergrund und Erfahrungen aus dem Forum: [`../../docs/hintergrund-forum.md`](../../docs/hintergrund-forum.md).
+
 ## Dateien, die nur lokal beim Owner liegen
 
 Aus Größen- und Platzgründen liegen die folgenden Daten **nicht** auf
