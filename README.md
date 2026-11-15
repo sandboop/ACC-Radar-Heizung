@@ -38,7 +38,7 @@ Kommunikationssystem des Fahrzeugs, kein CAN-Bus):
 |---|---|
 | Hardware | V3.1 (PSU + CM) und V3.2 (4 Lagen) gebaut; V3.3 nur Layoutversuch; V4 nur Schaltplan-Entwurf; V2 nur Fertigungsdaten (Archiv) |
 | Firmware | neu strukturiert (Zustandsautomat, ohne Fließkomma, eigener DHT11-Treiber): **baut, nicht auf Hardware getestet** |
-| Mechanik | Prototyp V1 (3D-Druck), Düse in Arbeit; Dateien (Scans, STL) noch nicht veröffentlicht |
+| Mechanik | Prototyp V1 (3D-Druck), Düse in Arbeit; [Scan der Front und Prototyp-Dateien](vehicles/golf7-facelift/scan-daten.md) als Download |
 | Fahrzeug | keine dokumentierten Fahrzeugergebnisse |
 
 Das Gerät hat laut Projektinhaber mit einem früheren Firmware-Stand im Grundsatz funktioniert, ist aber weit

@@ -23,9 +23,11 @@ liegen deshalb nicht im Git (siehe `.gitignore`):
 - **3D-Druckdateien des Prototyps V1**: Gehäuse Heizelement, Platinengehäuse und -deckel, DHT11-Gehäuse,
   Einlass-Befestigung, mit Druckparametern (Bambu Lab).
 
-**Bereitstellung:** Reduzierte Varianten (nur Emblem und Radarbereich) kommen als Release-Anhang hier auf GitHub, die
-Rohdaten per Download-Link. Wer daran arbeiten möchte, meldet sich bitte in [Issue #31](https://github.com/sandboop/ACC-Radar-Heizung/issues/31) oder im Forum:
-Dann werden die Dateien als Erstes bereitgestellt. Die zugehörige Aufgabe zum Konstruieren steht in
+**Bereitstellung:** Der für die Konstruktion aufbereitete Scan (`Radar-3D-Scan.stl`, 84 MB, Millimeter) und die
+Druckdateien des Prototyps V1 stehen als Release [**scan-daten-v1**](https://github.com/sandboop/ACC-Radar-Heizung/releases/tag/scan-daten-v1)
+zum Download bereit. Einheiten, Ausrichtung (Fahrtrichtung −Y, oben +Z), Inhalt und Zustand beschreibt
+[`scan-daten.md`](scan-daten.md). Die größeren Rohdaten gibt es auf Anfrage
+([Issue #31](https://github.com/sandboop/ACC-Radar-Heizung/issues/31)); die Aufgabe zum Konstruieren steht in
 [Issue #32](https://github.com/sandboop/ACC-Radar-Heizung/issues/32).
 
 ## Offene Punkte
