@@ -57,6 +57,7 @@ von einbaufertig entfernt.
 
 ## Loslegen
 
+- **Erste Fragen:** [`docs/faq.md`](docs/faq.md) beantwortet die häufigsten (Zulassung, Kaufen, Stand, Fahrzeuge, Sicherheit)
 - **Firmware bauen:** [`firmware/README.md`](firmware/README.md) (`arduino-cli`, megaTinyCore 2.6.11)
 - **Testen:** [`docs/pruefstand.md`](docs/pruefstand.md): Aufbau ohne Fahrzeug mit Lastwiderstand, Ersatzwiderständen
   und Debug-Ausgang. Berichte bitte über die Issue-Vorlage "Prüfstandbericht".
