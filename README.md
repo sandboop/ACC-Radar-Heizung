@@ -50,7 +50,7 @@ von einbaufertig entfernt.
 |---|---|
 | [`hardware/`](hardware/) | Schaltpläne und Layouts (EasyEDA), Gerber, Stückliste, Versionsübersicht |
 | [`firmware/`](firmware/) | Firmware (ATtiny826, Arduino/megaTinyCore), Datenlogger, Archiv älterer Stände |
-| [`docs/`](docs/) | Verhaltensspezifikation, Sicherheits-Audit, Hardware-Analyse, Prüfstand-Checkliste |
+| [`docs/`](docs/) | Verhaltensspezifikation, Sicherheits-Audit, Hardware-Analyse, Prüfstand-Checkliste, Hintergrund aus dem Forum |
 | [`logs/`](logs/) | Messreihen der Bordspannung (Golf 7 R) |
 | [`tools/`](tools/) | Werkzeuge, z. B. Generator der NTC-Tabelle |
 | [`vehicles/`](vehicles/) | Fahrzeugbezogene Doku (Golf 7 Facelift) |
@@ -60,6 +60,7 @@ von einbaufertig entfernt.
 - **Firmware bauen:** [`firmware/README.md`](firmware/README.md) (`arduino-cli`, megaTinyCore 2.6.11)
 - **Testen:** [`docs/pruefstand.md`](docs/pruefstand.md): Aufbau ohne Fahrzeug mit Lastwiderstand, Ersatzwiderständen
   und Debug-Ausgang. Berichte bitte über die Issue-Vorlage "Prüfstandbericht".
+- **Hintergrund:** Erfahrungen und Ideen aus dem Forum in [`docs/hintergrund-forum.md`](docs/hintergrund-forum.md)
 - **Hardware verstehen:** [`hardware/README.md`](hardware/README.md) und
   [`docs/hardware-analyse-v3.2.md`](docs/hardware-analyse-v3.2.md)
 
