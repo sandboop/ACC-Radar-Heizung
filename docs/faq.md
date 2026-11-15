@@ -153,5 +153,5 @@ Kennzeichnung im Pull Request, Sorgfalt bei Sicherheitslogik) stehen in [`../CON
 tool-neutral in [`../AGENTS.md`](../AGENTS.md).
 
 ### Wo kann ich Fragen stellen oder Ergebnisse melden?
-Als Issue auf GitHub (Vorlagen für Fehler, Ideen und Prüfstandberichte) oder im Forenthread. Sicherheitsrelevante
+Als Issue auf GitHub (Vorlagen für Fehler, Ideen und Prüfstandberichte) oder im [Forenthread](https://www.golf7freunde.de/index.php/Thread/20027-Update-zur-Logo-Radarheizung-Das-Projekt-ist-jetzt-Open-Source-auf-GitHub-und-ic/). Sicherheitsrelevante
 Funde bitte nach [`../SECURITY.md`](../SECURITY.md) melden.
