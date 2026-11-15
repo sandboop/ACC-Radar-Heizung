@@ -30,7 +30,7 @@ jobs:
           arduino-cli core update-index
           arduino-cli core install megaTinyCore:megaavr@2.6.11
 
-      - name: Bauen (Standard: eigener DHT11-Treiber, Debug-Ausgang an)
+      - name: "Bauen (Standard: eigener DHT11-Treiber, Debug-Ausgang an)"
         run: |
           arduino-cli compile -b megaTinyCore:megaavr:atxy6:chip=826 --warnings all firmware/acc_radar_heizung
 
