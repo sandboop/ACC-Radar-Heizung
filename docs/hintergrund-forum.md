@@ -9,6 +9,8 @@ muss, steht hier das Wesentliche in eigenen Worten; Nutzernamen sind weggelassen
 > Die Zusammenfassung wurde aus den Seiten erstellt und sollte bei wichtigen Punkten gegen den Thread
 > geprüft werden. Beitragsnummern (#) beziehen sich auf den Thread.
 
+Die aktuelle Diskussion zum Projekt läuft im [Forenthread zum Update und zur Veröffentlichung](https://www.golf7freunde.de/index.php/Thread/20027-Update-zur-Logo-Radarheizung-Das-Projekt-ist-jetzt-Open-Source-auf-GitHub-und-ic/).
+
 ## 1. Wie sich das Problem zeigt
 
 - Bei leichtem Schneeregen oder einer dünnen Schneeschicht meldet das Kombiinstrument, dass ACC und

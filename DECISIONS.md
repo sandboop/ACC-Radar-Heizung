@@ -250,3 +250,8 @@ lebendes Spec-Dokument.
 - Fahrzeug: Golf 7 R Variant (Facelift), HSN/TSN 0603/BRM (Fahrzeugtyp, nicht individuell), Baujahr 12/2019. Scanner-Einstellungen
   und Datum sind nicht mehr bekannt.
 - Rechtlicher Hinweis zu Marken (VW-Emblem) im Release und in `scan-daten.md`.
+
+## 2026-11-15 — Forenbeitrag verlinkt
+
+- Der Beitrag zur Veröffentlichung wurde im Forum gepostet (eigener Thread) und ist im README, in der FAQ und in
+  `docs/hintergrund-forum.md` verlinkt. Der Link enthält bewusst keine Sitzungskennung (`?s=...`).

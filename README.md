@@ -57,6 +57,7 @@ von einbaufertig entfernt.
 
 ## Loslegen
 
+- **Diskussion:** Austausch, Fragen und Ideen im [Forenthread auf golf7freunde.de](https://www.golf7freunde.de/index.php/Thread/20027-Update-zur-Logo-Radarheizung-Das-Projekt-ist-jetzt-Open-Source-auf-GitHub-und-ic/)
 - **Erste Fragen:** [`docs/faq.md`](docs/faq.md) beantwortet die häufigsten (Zulassung, Kaufen, Stand, Fahrzeuge, Sicherheit)
 - **Firmware bauen:** [`firmware/README.md`](firmware/README.md) (`arduino-cli`, megaTinyCore 2.6.11)
 - **Testen:** [`docs/pruefstand.md`](docs/pruefstand.md): Aufbau ohne Fahrzeug mit Lastwiderstand, Ersatzwiderständen
