@@ -1,0 +1,40 @@
+name: Idee oder Vorschlag
+description: Verbesserung, Erweiterung oder Anpassung an ein anderes Fahrzeug
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ideen sind willkommen. Bitte beachte: Änderungen an der **Sicherheitslogik** brauchen eine
+        Begründung und einen Plan für die Prüfung.
+  - type: dropdown
+    id: bereich
+    attributes:
+      label: Bereich
+      options:
+        - Firmware
+        - Hardware / Platine
+        - Mechanik/CAD
+        - Anderes Fahrzeug
+        - Dokumentation
+    validations:
+      required: true
+  - type: textarea
+    id: idee
+    attributes:
+      label: Worum geht es?
+    validations:
+      required: true
+  - type: textarea
+    id: nutzen
+    attributes:
+      label: Wozu ist das gut, und was wäre ein Nachteil?
+  - type: textarea
+    id: pruefung
+    attributes:
+      label: Wie ließe es sich prüfen?
+  - type: textarea
+    id: fahrzeug
+    attributes:
+      label: Fahrzeug (falls relevant)
+      description: Modell, Baujahr, Sensorposition. Bitte keine FIN und kein Kennzeichen.

@@ -1,0 +1,28 @@
+# Große/lokale CAD- und Scan-Daten (nur lokal beim Owner, siehe .claude/rules/general.md)
+*.stl
+*.obj
+*.mtl
+*.3mf
+*.asc
+*.f3d
+*.dwg
+*.dxf
+3D-Scan/
+3D-Druck/
+
+# Arduino/Compiler-Artefakte
+*.lst
+*.map
+*.hex
+*.elf
+
+# Secrets
+arduino_secrets.h
+.env
+
+# Persönliche Agenten/Einstellungen von Mitwirkenden
+.claude/agents/local/
+.claude/settings.local.json
+
+# Export-Markierung
+.public-export-marker

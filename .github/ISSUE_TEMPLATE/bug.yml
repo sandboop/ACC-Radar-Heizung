@@ -1,0 +1,54 @@
+name: Fehler melden
+description: Ein Fehler in Firmware, Hardware oder Dokumentation
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Danke für die Meldung. **Achtung:** Dieses Projekt ist nicht zugelassen und der Stand ist
+        großteils ungetestet. Bitte beschreibe möglichst genau, was du beobachtest.
+  - type: dropdown
+    id: bereich
+    attributes:
+      label: Bereich
+      options:
+        - Firmware
+        - Hardware (Schaltplan, Layout, Stückliste)
+        - Mechanik/CAD
+        - Dokumentation
+        - Sonstiges
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version oder Commit
+      description: Firmware-Version (steht in der Startmeldung des Debug-Ausgangs) und Platinenversion, z. B. 0.4.0-dev auf V3.2
+    validations:
+      required: true
+  - type: textarea
+    id: beschreibung
+    attributes:
+      label: Was passiert?
+    validations:
+      required: true
+  - type: textarea
+    id: erwartet
+    attributes:
+      label: Was hättest du erwartet?
+  - type: textarea
+    id: schritte
+    attributes:
+      label: Schritte zum Nachvollziehen
+  - type: textarea
+    id: ausgabe
+    attributes:
+      label: Debug-Ausgabe oder Messwerte
+      description: Auszug der seriellen Ausgabe (Startmeldung, Statuszeilen, Fehlerspeicher) oder Messwerte. Bitte keine personenbezogenen Daten.
+      render: text
+  - type: checkboxes
+    id: sicherheit
+    attributes:
+      label: Sicherheit
+      options:
+        - label: Der Fehler betrifft die Sicherheit (Überhitzung, ungewollter Dauerbetrieb, Abschaltung greift nicht).

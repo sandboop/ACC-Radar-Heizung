@@ -1,0 +1,50 @@
+name: Prüfstandbericht
+description: Ergebnis eines Tests nach docs/pruefstand.md
+labels: ["test"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Bericht über einen Test nach [`docs/pruefstand.md`](../blob/main/docs/pruefstand.md). Bitte
+        Abweichungen genauso berichten wie bestandene Tests.
+  - type: input
+    id: version
+    attributes:
+      label: Firmware-Version und Platine
+      description: z. B. 0.4.0-dev, Platine V3.2, eigener DHT11-Treiber
+    validations:
+      required: true
+  - type: input
+    id: testpunkte
+    attributes:
+      label: Testpunkte
+      description: IDs aus der Checkliste, z. B. T10 bis T17
+    validations:
+      required: true
+  - type: dropdown
+    id: ergebnis
+    attributes:
+      label: Ergebnis
+      options:
+        - bestanden
+        - Abweichung
+        - nicht durchführbar
+    validations:
+      required: true
+  - type: textarea
+    id: aufbau
+    attributes:
+      label: Aufbau
+      description: Netzteil, Last statt Heizelement, NTC-Ersatz, Sensor, Messgeräte
+  - type: textarea
+    id: messwerte
+    attributes:
+      label: Messwerte und Beobachtungen
+      description: Gemessene Werte (z. B. Ruhestrom, Spannungsgenauigkeit, Einschaltschwelle) und Abweichungen vom Sollwert
+    validations:
+      required: true
+  - type: textarea
+    id: ausgabe
+    attributes:
+      label: Debug-Ausgabe
+      render: text
