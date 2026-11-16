@@ -97,7 +97,7 @@ void loop() {
   }
 
 
-  if((writetime + DELAY <= millis()) && (initial == true) && (stop == false))
+  if(((millis() - writetime) >= DELAY) && (initial == true) && (stop == false))
   {
     state = !state;
     digitalWrite(LED1, LOW);

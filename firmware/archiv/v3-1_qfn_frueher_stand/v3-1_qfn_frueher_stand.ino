@@ -118,7 +118,7 @@ void get_inputs()
   //________________________________________________________________________________________
   //NTC-Sensorik wird eingelesen und berechnet  
 
-  if((readtimedelay + NTCDELAY) <= millis()) 
+  if((millis() - readtimedelay) >= NTCDELAY)
   { 
     digitalWrite(NTCPOWER, HIGH);                             //Spannungsversorgung NTC einschalten
     delay(10);                                                //Wartezeit bis Ausgang sich eingependelt hat. Datenblatt typisch 1,5ns bei 20pF (Cap)
@@ -160,7 +160,7 @@ void get_inputs()
   //________________________________________________________________________________________
   //DHT-11 Sensor-Daten werden eingelesen und verifiziert
 
-  if((readtimedelay1 + DHTDELAY) <=  millis())    //Bedingung prüfen ob DHT-11 Sensor wieder ausgelesen werden kann
+  if((millis() - readtimedelay1) >= DHTDELAY)    //Bedingung prüfen ob DHT-11 Sensor wieder ausgelesen werden kann
   {
     dht_h = dht.readHumidity();         //1°C
     dht_t = dht.readTemperature();      //71%
@@ -291,7 +291,7 @@ void heating()
 
 void fan()
 {//                                                                   true                   true
-  if(((readtimedelay2 + STARTUPDELAY) <= millis()) && (release_fan == false) && (no_error == true))
+  if(((millis() - readtimedelay2) >= STARTUPDELAY) && (release_fan == false) && (no_error == true))
   {
   readtimedelay2 = millis();
   release_fan = true;
@@ -302,7 +302,7 @@ void fan()
   #endif
   }
 //                                                                    true                   true
-  else if(((readtimedelay2 + STARTUPDELAY) <= millis()) && (outfan == false) && (no_error == true))
+  else if(((millis() - readtimedelay2) >= STARTUPDELAY) && (outfan == false) && (no_error == true))
   {
     readtimedelay2 = millis();
     outfan = true;
@@ -323,7 +323,7 @@ void fan()
 void write_output()
 
 {
-  if((readtimedelay3 + REGULATIONDELAY) <= millis())
+  if((millis() - readtimedelay3) >= REGULATIONDELAY)
   {
     readtimedelay3 = millis();
 
@@ -349,20 +349,20 @@ void write_output()
 void standby()
 
 {//                                                                      false
-  if((readtimedelay4 + STANDYBYDELAY <= millis()) && (release_heating == true))
+  if(((millis() - readtimedelay4) >= STANDYBYDELAY) && (release_heating == true))
   {
     release_heating = false;
     readtimedelay4 = millis();
   }
 //                                                                true                     false
-  if((readtimedelay4 + STANDYBYDELAY <= millis()) && (no_error == true) && (release_fan == true))
+  if(((millis() - readtimedelay4) >= STANDYBYDELAY) && (no_error == true) && (release_fan == true))
     {
       release_fan = false;
       out_fan = false;
     }
     else {release_fan = true;}
 //                                                                false
-  if((readtimedelay4 + SHUTDOWNDELAY <= millis()) && (shutdown == true))
+  if(((millis() - readtimedelay4) >= SHUTDOWNDELAY) && (shutdown == true))
   {
     readtimedelay4 = millis();
     release_heating = false;

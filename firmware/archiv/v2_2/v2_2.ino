@@ -136,7 +136,7 @@ return;
 void standby()
 {
 //________________________________________________________________
-if((readtimedelay3 + STANDYBYDELAY) <= millis())
+if((millis() - readtimedelay3) >= STANDYBYDELAY)
 {
   #ifdef DEBUG
     Serial.println("Standby aktiv!");
@@ -148,7 +148,7 @@ if((readtimedelay3 + STANDYBYDELAY) <= millis())
 }
 
   
-  if((readtimedelay4 + SHUTDOWNDELAY) <= millis() && (heating_act <= MAXTEMPPLATE))
+  if(((millis() - readtimedelay4) >= SHUTDOWNDELAY) && (heating_act <= MAXTEMPPLATE))
   {
     #ifdef DEBUG
      Serial.println("Shutdown, wait for reboot MCU!");
@@ -168,7 +168,7 @@ return;
 void get_inputs() 
 {
   
-if((readtimedelay + NTCDELAY) <= millis()) 
+if((millis() - readtimedelay) >= NTCDELAY)
 
 {
   readtimedelay = millis();
@@ -200,7 +200,7 @@ if((readtimedelay + NTCDELAY) <= millis())
 
 }
 
-if((readtimedelay1 + DHTDELAY) <=  millis())
+if((millis() - readtimedelay1) >= DHTDELAY)
   {
   dht_h = dht.readHumidity();
   dht_t = dht.readTemperature();
@@ -257,7 +257,7 @@ void fan()
   #endif
   }
 
-  if((readtimedelay2 + STARTUPDELAY) <= millis())
+  if((millis() - readtimedelay2) >= STARTUPDELAY)
   {
     readtimedelay2 = millis();
     outfan = true;
