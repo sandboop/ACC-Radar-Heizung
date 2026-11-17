@@ -50,10 +50,10 @@ void setup() {
 void loop() {
   if ((temp < 5.0) && (humid > 70.0)) {
     if (generatorRunning()) {
-      if ((mytime2 + 400) < millis()) {
+      if ((millis() - mytime2) > 400) {
         checkTemp();
       }
-      if ((mytime3 + 500) < millis()) {
+      if ((millis() - mytime3) > 500) {
         if (startFan()) {
           mytime3 = millis();
         }
