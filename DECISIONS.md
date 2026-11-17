@@ -255,3 +255,37 @@ lebendes Spec-Dokument.
 
 - Der Beitrag zur Veröffentlichung wurde im Forum gepostet (eigener Thread) und ist im README, in der FAQ und in
   `docs/hintergrund-forum.md` verlinkt. Der Link enthält bewusst keine Sitzungskennung (`?s=...`).
+
+## 2026-11-17 — Erster Pull Request, neutrale Autor-Adresse, Historie bereinigt
+
+- Erster externer Pull Request (#33, überlaufsichere `millis()`-Vergleiche in Archiv-Sketchen und Datenlogger, schließt
+  Issue #13) nach Review durch `git-maintainer` per **Squash-Merge** übernommen (Squash, damit die Platzhalter-Adresse
+  des Commits nicht in die Historie gelangt). Die aktive Firmware war nicht betroffen, ein `safety-reviewer` war nicht nötig.
+- Problem: Die neutrale Commit-Identität `noreply@users.noreply.github.com` ist für GitHub die Adresse des **realen Kontos**
+  `noreply`. Dieses Konto wurde dadurch als einziger Contributor des Repos geführt.
+- Entscheidung des Projektinhabers: neutrale Autor-Adresse künftig `contributors@acc-radar-heizung.invalid` (kein Konto kann
+  sie beanspruchen), Name unverändert "ACC-Radar-Heizung contributors". Die bestehenden 8 Commits wurden dafür **umgeschrieben**
+  (Force-Push auf `main`, Inhalt unverändert, Commit-SHAs neu). Das Release-Tag `scan-daten-v1` wurde auf den inhaltsgleichen
+  neuen Commit gesetzt (Release und Dateien unverändert). Vorher bestehende SHAs sind ungültig.
+- Maßgeblich für Beiträge Externer bleibt: Fork, Branch, Pull Request; Maintainer committen direkt auf `main`.
+
+## 2026-11-17 — Luftführung und Düse dokumentiert
+
+- Rückmeldung aus dem Forum (Frage zur Befestigung, Sorge wegen Fahrtwind und Temperatur, Vorschlag Flächenheizung) war
+  Anlass, die Luftführung schriftlich festzuhalten: `docs/luftfuehrung.md` mit vier Skizzen in `docs/bilder/` (aus der
+  Fusion-Konstruktion v17 über dem Scan, Oberfläche entfernt, komprimiert).
+- Festgehalten: Es wird **nur die Emblemplatte** angeblasen, nicht der Radarsensor. Abluft ist nicht gezielt geführt. Die Düse ist
+  in der jetzigen Form **nicht druckbar** (Streben), sie wird auf den Radarhalter geklebt. Die **Befestigung des Gehäuses ist
+  offen** (Haubenverschluss mit mehreren Schraubpunkten oder ein geklemmter Halter).
+- Einziger Erfahrungswert ist ein früherer Einzeltestlauf (Radiallüfter, 40 W, bei −3 °C Ansaugluft etwa 40 °C Ausblasluft,
+  Heizelement etwa 100 °C, PETG-Halterung nicht geschmolzen), nicht protokolliert. Er wird so ausgewiesen, nicht als Nachweis.
+- Regelgröße: Die Plattentemperatur gilt als Stellvertreter für die zugeführte Energie, nicht als Ziel an sich. Alle Grenz- und
+  Sollwerte im Code sind Versuchswerte und werden später mit Versuchen angepasst und belegt (empirischer Temperaturkoeffizient
+  denkbar). Kontaktlose Messung per Thermopile (z. B. MLX90614) neben der Düse ist eine **Idee, nicht entschieden**, damit der
+  Aufbau fehlerärmer wird (NTC-Position beim Selbstbau streut). Position unter oder seitlich der Düse, MLX90614 nur als
+  Beispiel (auch ein einzelnes Thermopile mit Auswertung auf der Platine denkbar). Bewusst **keiner Platinenversion
+  zugeordnet**, ob sich der Aufwand lohnt, ist offen.
+- Das Emblem-Material wird erst genannt, wenn es geprüft und fotografisch belegt ist.
+- Warum Luft statt Flächenheizung: Metall und Wasser dämpfen Radarstrahlen. Die Flächenheizung ist nicht ausgeschlossen, ihre
+  Dämpfung ist nicht gemessen, und die Steuerung ließe sich anpassen.
+- Forumsantworten mit Nutzernamen gehören nicht ins Repo und nicht in `Doc_Inbox/`-Commits.

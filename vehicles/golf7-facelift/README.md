@@ -35,3 +35,5 @@ zum Download bereit. Einheiten, Ausrichtung (Fahrtrichtung −Y, oben +Z), Inhal
 - Maße und Toleranzen aus dem Scan dokumentieren.
 - Wirkung des Luftstroms (Strömungssimulation) und Material des Logos
   bzw. der Düse hinsichtlich Radardurchlässigkeit: ungeprüft.
+- Luftführung, Düse und mögliche Befestigung am Haubenverschluss sind mit
+  Skizzen beschrieben in [`../../docs/luftfuehrung.md`](../../docs/luftfuehrung.md).
